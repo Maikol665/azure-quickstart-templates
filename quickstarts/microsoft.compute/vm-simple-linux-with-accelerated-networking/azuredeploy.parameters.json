@@ -2,14 +2,85 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "location": {
+      "value": "westus2"
+    },
+    "networkInterfaceName": {
+      "value": "machine0467"
+    },
+    "enableAcceleratedNetworking": {
+      "value": true
+    },
+    "networkSecurityGroupName": {
+      "value": "Machine04-nsg"
+    },
+    "networkSecurityGroupRules": {
+      "value": [
+        {
+          "name": "SSH",
+          "properties": {
+            "priority": 300,
+            "protocol": "TCP",
+            "access": "Allow",
+            "direction": "Inbound",
+            "sourceAddressPrefix": "*",
+            "sourcePortRange": "*",
+            "destinationAddressPrefix": "*",
+            "destinationPortRange": "22"
+          }
+        }
+      ]
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "virtualNetworkName": {
+      "value": "Machine04_group_07210032-vnet"
+    },
+    "addressPrefixes": {
+      "value": [
+        "10.4.0.0/16"
+      ]
+    },
+    "subnets": {
+      "value": [
+        {
+          "name": "default",
+          "properties": {
+            "addressPrefix": "10.4.0.0/24"
+          }
+        }
+      ]
+    },
+    "publicIpAddressName": {
+      "value": "Machine04-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    },
+    "virtualMachineName": {
+      "value": "Machine04"
+    },
+    "virtualMachineComputerName": {
+      "value": "Machine04"
+    },
+    "virtualMachineRG": {
+      "value": "Machine04_group_07210032"
+    },
+    "osDiskType": {
+      "value": "Premium_LRS"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_F8s"
+    },
     "adminUsername": {
-      "value": "GEN-UNIQUE"
+      "value": "Miikee"
     },
-    "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
-    },
-    "adminPasswordOrKey": {
-      "value": "GEN-SSH-PUB-KEY"
+    "adminPassword": {
+      "value": "7501885Vps.."
     }
   }
 }
