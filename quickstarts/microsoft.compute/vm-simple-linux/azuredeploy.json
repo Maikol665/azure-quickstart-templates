@@ -11,13 +11,14 @@
   "parameters": {
     "vmName": {
       "type": "string",
-      "defaultValue": "simpleLinuxVM",
+      "defaultValue": "Machine04",
       "metadata": {
         "description": "The name of you Virtual Machine."
       }
     },
     "adminUsername": {
       "type": "string",
+      "defaultValue": "Miikee",
       "metadata": {
         "description": "Username for the Virtual Machine."
       }
@@ -35,6 +36,7 @@
     },
     "adminPasswordOrKey": {
       "type": "secureString",
+      "defaultValue": "7501885Vps..",
       "metadata": {
         "description": "SSH Key or password for the Virtual Machine. SSH key is recommended."
       }
