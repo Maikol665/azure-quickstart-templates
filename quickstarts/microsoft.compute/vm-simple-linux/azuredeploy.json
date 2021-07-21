@@ -18,6 +18,7 @@
     },
     "adminUsername": {
       "type": "string",
+      "defaultValue": "Miikee",
       "metadata": {
         "description": "Username for the Virtual Machine."
       }
