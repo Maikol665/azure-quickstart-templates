@@ -16,7 +16,8 @@
         "description": "The name of you Virtual Machine."
       }
     },
-    "adminUsername": "Miikee",
+    "adminUsername": {
+      "value": "Miikee"
       "type": "string",
       "metadata": {
         "description": "Username for the Virtual Machine."
